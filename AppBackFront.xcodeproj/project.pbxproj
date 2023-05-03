@@ -21,6 +21,7 @@
 		DFB0BDC429E9CDDE00B38101 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0BDC329E9CDDE00B38101 /* LoginScreen.swift */; };
 		DFD975672A028D0A0074DCA7 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD975662A028D0A0074DCA7 /* TabBarVC.swift */; };
 		DFD9756C2A028E0F0074DCA7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD9756B2A028E0F0074DCA7 /* HomeVC.swift */; };
+		DFD9756F2A029A5C0074DCA7 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD9756E2A029A5C0074DCA7 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DFB0BDC329E9CDDE00B38101 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		DFD975662A028D0A0074DCA7 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		DFD9756B2A028E0F0074DCA7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		DFD9756E2A029A5C0074DCA7 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +150,18 @@
 		DFD975692A028D900074DCA7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DFD9756D2A029A270074DCA7 /* Screen */,
 				DFD9756B2A028E0F0074DCA7 /* HomeVC.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		DFD9756D2A029A270074DCA7 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DFD9756E2A029A5C0074DCA7 /* HomeScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				DFD9756C2A028E0F0074DCA7 /* HomeVC.swift in Sources */,
 				DF9BD1162A007E8A00FD9299 /* UIViewController+Extension.swift in Sources */,
 				DFA7E0132A01D433003B2EEC /* AlertController.swift in Sources */,
+				DFD9756F2A029A5C0074DCA7 /* HomeScreen.swift in Sources */,
 				DF9BD1182A00848F00FD9299 /* String+Extension.swift in Sources */,
 				DFD975672A028D0A0074DCA7 /* TabBarVC.swift in Sources */,
 				DF628EE229E5F2F200534733 /* SceneDelegate.swift in Sources */,
