@@ -5,9 +5,8 @@
 //  Created by Haroldo Vinente on 11/04/23.
 //
 
-import UIKit
 import Firebase
-
+import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
@@ -15,7 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let vc = LoginVC()
+//        let vc = LoginVC()
+        let vc = TabBarVC()
         window.rootViewController = vc
         window.makeKeyAndVisible()
         self.window = window
