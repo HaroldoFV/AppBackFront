@@ -17,7 +17,10 @@
 		DF9BD1122A0061EA00FD9299 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = DF9BD1112A0061EA00FD9299 /* FirebaseCrashlytics */; };
 		DF9BD1162A007E8A00FD9299 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9BD1152A007E8A00FD9299 /* UIViewController+Extension.swift */; };
 		DF9BD1182A00848F00FD9299 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9BD1172A00848F00FD9299 /* String+Extension.swift */; };
+		DFA7E0132A01D433003B2EEC /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA7E0122A01D433003B2EEC /* AlertController.swift */; };
 		DFB0BDC429E9CDDE00B38101 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0BDC329E9CDDE00B38101 /* LoginScreen.swift */; };
+		DFD975672A028D0A0074DCA7 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD975662A028D0A0074DCA7 /* TabBarVC.swift */; };
+		DFD9756C2A028E0F0074DCA7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD9756B2A028E0F0074DCA7 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +34,10 @@
 		DF9BD10C2A00602400FD9299 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF9BD1152A007E8A00FD9299 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DF9BD1172A00848F00FD9299 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DFA7E0122A01D433003B2EEC /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		DFB0BDC329E9CDDE00B38101 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		DFD975662A028D0A0074DCA7 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		DFD9756B2A028E0F0074DCA7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +72,10 @@
 		DF628EDE29E5F2F200534733 /* AppBackFront */ = {
 			isa = PBXGroup;
 			children = (
+				DFD975682A028D4C0074DCA7 /* Feature */,
+				DFD975652A028C9D0074DCA7 /* TabBarController */,
+				DFA7E0112A01D419003B2EEC /* Alert */,
 				DF9BD1132A007E0F00FD9299 /* Utils */,
-				DF9BD10A2A005C2900FD9299 /* Login */,
 				DF628EDF29E5F2F200534733 /* AppDelegate.swift */,
 				DF628EE129E5F2F200534733 /* SceneDelegate.swift */,
 				DF628EE829E5F2F400534733 /* Assets.xcassets */,
@@ -110,6 +118,39 @@
 				DF9BD1172A00848F00FD9299 /* String+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		DFA7E0112A01D419003B2EEC /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				DFA7E0122A01D433003B2EEC /* AlertController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		DFD975652A028C9D0074DCA7 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				DFD975662A028D0A0074DCA7 /* TabBarVC.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		DFD975682A028D4C0074DCA7 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				DFD975692A028D900074DCA7 /* Home */,
+				DF9BD10A2A005C2900FD9299 /* Login */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		DFD975692A028D900074DCA7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DFD9756B2A028E0F0074DCA7 /* HomeVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +234,11 @@
 				DF628EE429E5F2F200534733 /* LoginVC.swift in Sources */,
 				DFB0BDC429E9CDDE00B38101 /* LoginScreen.swift in Sources */,
 				DF628EE029E5F2F200534733 /* AppDelegate.swift in Sources */,
+				DFD9756C2A028E0F0074DCA7 /* HomeVC.swift in Sources */,
 				DF9BD1162A007E8A00FD9299 /* UIViewController+Extension.swift in Sources */,
+				DFA7E0132A01D433003B2EEC /* AlertController.swift in Sources */,
 				DF9BD1182A00848F00FD9299 /* String+Extension.swift in Sources */,
+				DFD975672A028D0A0074DCA7 /* TabBarVC.swift in Sources */,
 				DF628EE229E5F2F200534733 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
