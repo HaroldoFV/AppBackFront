@@ -43,7 +43,7 @@ class HomeScreen: UIView {
         collectionView.setCollectionViewLayout(layout, animated: false)
         return collectionView
     }()
-
+// test commit
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
