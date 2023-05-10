@@ -35,7 +35,7 @@ struct LogoImage: Codable {
     var image: String?
 }
 
-// MARK: - NftList
+// MARK: - Nft
 
 struct Nft: Codable {
     var ownedBy: String?
@@ -80,5 +80,3 @@ struct LatestDeal: Codable {
         case lastAccess = "last_access"
     }
 }
-  
- 

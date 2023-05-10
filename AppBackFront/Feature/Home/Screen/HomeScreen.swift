@@ -36,8 +36,7 @@ class HomeScreen: UIView {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
-        collectionView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
-        // TO DO: Register
+        collectionView.register(NftFilterCollectionViewCell.self, forCellWithReuseIdentifier: NftFilterCollectionViewCell.identifier)
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24)
         layout.scrollDirection = .horizontal
@@ -57,6 +56,11 @@ class HomeScreen: UIView {
     func configTableViewProtocols(delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
         tableView.delegate = delegate
         tableView.dataSource = dataSource
+    }
+
+    func configCollectionViewProtocols(delegate: UICollectionViewDelegate, dataSource: UICollectionViewDataSource) {
+        collectionView.delegate = delegate
+        collectionView.dataSource = dataSource
     }
 
     func configSearchBarDelegate(delegate: UISearchBarDelegate) {
@@ -88,7 +92,7 @@ class HomeScreen: UIView {
             viewBackGround.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             viewBackGround.leadingAnchor.constraint(equalTo: leadingAnchor),
             viewBackGround.trailingAnchor.constraint(equalTo: trailingAnchor),
-            viewBackGround.heightAnchor.constraint(equalToConstant: 200),
+            viewBackGround.heightAnchor.constraint(equalToConstant: 160),
 
             logoImageView.topAnchor.constraint(equalTo: viewBackGround.topAnchor, constant: 5),
             logoImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),

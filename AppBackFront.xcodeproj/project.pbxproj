@@ -26,6 +26,8 @@
 		DFE189182A071D840040F70E /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE189172A071D840040F70E /* HomeService.swift */; };
 		DFE1891A2A071E660040F70E /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE189192A071E660040F70E /* GenericService.swift */; };
 		DFE1891F2A07F7B60040F70E /* NFTData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1891E2A07F7B60040F70E /* NFTData.swift */; };
+		DFE8D3392A0B0810001E39A0 /* NftFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8D3382A0B0810001E39A0 /* NftFilterCollectionViewCell.swift */; };
+		DFE8D33C2A0B08B3001E39A0 /* NftFilterCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8D33B2A0B08B3001E39A0 /* NftFilterCollectionViewCellScreen.swift */; };
 		EC5455FF183FE1E2B34ABB10 /* Pods_AppBackFront.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0481B6DF18DFA342733117A1 /* Pods_AppBackFront.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		DFE189192A071E660040F70E /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
 		DFE1891C2A07F69B0040F70E /* HomeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
 		DFE1891E2A07F7B60040F70E /* NFTData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTData.swift; sourceTree = "<group>"; };
+		DFE8D3382A0B0810001E39A0 /* NftFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftFilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		DFE8D33B2A0B08B3001E39A0 /* NftFilterCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftFilterCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 		DFD975682A028D4C0074DCA7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				DFE8D3362A0B074D001E39A0 /* Cells */,
 				DFD975692A028D900074DCA7 /* Home */,
 				DF9BD10A2A005C2900FD9299 /* Login */,
 			);
@@ -232,6 +237,31 @@
 				DFE1891E2A07F7B60040F70E /* NFTData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DFE8D3362A0B074D001E39A0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DFE8D3372A0B0773001E39A0 /* NftFilter */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DFE8D3372A0B0773001E39A0 /* NftFilter */ = {
+			isa = PBXGroup;
+			children = (
+				DFE8D33A2A0B0862001E39A0 /* Screen */,
+				DFE8D3382A0B0810001E39A0 /* NftFilterCollectionViewCell.swift */,
+			);
+			path = NftFilter;
+			sourceTree = "<group>";
+		};
+		DFE8D33A2A0B0862001E39A0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DFE8D33B2A0B08B3001E39A0 /* NftFilterCollectionViewCellScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		EEB6CE94D8DAE44FCA7756C3 /* Frameworks */ = {
@@ -370,6 +400,8 @@
 				DF628EE029E5F2F200534733 /* AppDelegate.swift in Sources */,
 				DFD9756C2A028E0F0074DCA7 /* HomeVC.swift in Sources */,
 				DF9BD1162A007E8A00FD9299 /* UIViewController+Extension.swift in Sources */,
+				DFE8D3392A0B0810001E39A0 /* NftFilterCollectionViewCell.swift in Sources */,
+				DFE8D33C2A0B08B3001E39A0 /* NftFilterCollectionViewCellScreen.swift in Sources */,
 				DFE1891A2A071E660040F70E /* GenericService.swift in Sources */,
 				DFE189182A071D840040F70E /* HomeService.swift in Sources */,
 				DFA7E0132A01D433003B2EEC /* AlertController.swift in Sources */,
