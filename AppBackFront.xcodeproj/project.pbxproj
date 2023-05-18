@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF4F05E62A16AACB00478C63 /* LastestDealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F05E52A16AACB00478C63 /* LastestDealTableViewCell.swift */; };
+		DF4F05E92A16AB5600478C63 /* LastestDealTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F05E82A16AB5600478C63 /* LastestDealTableViewCellScreen.swift */; };
+		DF4F05EC2A16B31A00478C63 /* LastestDealTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F05EB2A16B31A00478C63 /* LastestDealTableViewCellViewModel.swift */; };
 		DF628EE029E5F2F200534733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF628EDF29E5F2F200534733 /* AppDelegate.swift */; };
 		DF628EE229E5F2F200534733 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF628EE129E5F2F200534733 /* SceneDelegate.swift */; };
 		DF628EE429E5F2F200534733 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF628EE329E5F2F200534733 /* LoginVC.swift */; };
@@ -44,6 +47,9 @@
 		0481B6DF18DFA342733117A1 /* Pods_AppBackFront.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBackFront.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		330D83151725A330EDF885A8 /* Pods-AppBackFront.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBackFront.debug.xcconfig"; path = "Target Support Files/Pods-AppBackFront/Pods-AppBackFront.debug.xcconfig"; sourceTree = "<group>"; };
 		8D3458F5F82A8388E229F259 /* Pods-AppBackFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBackFront.release.xcconfig"; path = "Target Support Files/Pods-AppBackFront/Pods-AppBackFront.release.xcconfig"; sourceTree = "<group>"; };
+		DF4F05E52A16AACB00478C63 /* LastestDealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCell.swift; sourceTree = "<group>"; };
+		DF4F05E82A16AB5600478C63 /* LastestDealTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCellScreen.swift; sourceTree = "<group>"; };
+		DF4F05EB2A16B31A00478C63 /* LastestDealTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		DF628EDC29E5F2F200534733 /* AppBackFront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBackFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF628EDF29E5F2F200534733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF628EE129E5F2F200534733 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +104,32 @@
 				8D3458F5F82A8388E229F259 /* Pods-AppBackFront.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF4F05E42A16AA0000478C63 /* LastestDealTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F05EA2A16B2F000478C63 /* LastestDealTableViewCellViewModel */,
+				DF4F05E72A16AB1A00478C63 /* Screen */,
+				DF4F05E52A16AACB00478C63 /* LastestDealTableViewCell.swift */,
+			);
+			path = LastestDealTableViewCell;
+			sourceTree = "<group>";
+		};
+		DF4F05E72A16AB1A00478C63 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F05E82A16AB5600478C63 /* LastestDealTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DF4F05EA2A16B2F000478C63 /* LastestDealTableViewCellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F05EB2A16B31A00478C63 /* LastestDealTableViewCellViewModel.swift */,
+			);
+			path = LastestDealTableViewCellViewModel;
 			sourceTree = "<group>";
 		};
 		DF628ED329E5F2F200534733 = {
@@ -338,6 +370,7 @@
 		DFE8D3362A0B074D001E39A0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				DF4F05E42A16AA0000478C63 /* LastestDealTableViewCell */,
 				DFCC2C662A15903700C4F480 /* NftDescriptionTableViewCell */,
 				DFC8D9602A0ED6EB00A5F537 /* NftImageTableViewCell */,
 				DFD6171D2A0C1D14007DF17E /* NftTableViewCell */,
@@ -493,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4F05E92A16AB5600478C63 /* LastestDealTableViewCellScreen.swift in Sources */,
 				DF628EE429E5F2F200534733 /* LoginVC.swift in Sources */,
 				DFC8D9652A0ED84B00A5F537 /* NftImageTableViewCellScreen.swift in Sources */,
 				DFE189142A071CB50040F70E /* HomeViewModel.swift in Sources */,
@@ -511,12 +545,14 @@
 				DFE1891F2A07F7B60040F70E /* NFTData.swift in Sources */,
 				DF9BD1182A00848F00FD9299 /* String+Extension.swift in Sources */,
 				DFD617282A0DC13E007DF17E /* NftDetailViewModel.swift in Sources */,
+				DF4F05EC2A16B31A00478C63 /* LastestDealTableViewCellViewModel.swift in Sources */,
 				DFCC2C682A1590BB00C4F480 /* NftDescriptionTableViewCell.swift in Sources */,
 				DFD617252A0DC0B1007DF17E /* NftDetailVC.swift in Sources */,
 				DFD975672A028D0A0074DCA7 /* TabBarVC.swift in Sources */,
 				DF628EE229E5F2F200534733 /* SceneDelegate.swift in Sources */,
 				DFD617222A0C1E88007DF17E /* NftTableViewCellScreen.swift in Sources */,
 				DFD6171F2A0C1D54007DF17E /* NftTableViewCell.swift in Sources */,
+				DF4F05E62A16AACB00478C63 /* LastestDealTableViewCell.swift in Sources */,
 				DFD6172B2A0DC1B8007DF17E /* NftDetailScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
