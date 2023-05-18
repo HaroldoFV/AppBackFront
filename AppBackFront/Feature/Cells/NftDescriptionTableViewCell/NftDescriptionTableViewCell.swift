@@ -1,17 +1,17 @@
 //
-//  NftImageTableViewCell.swift
+//  NftDescriptionTableViewCell.swift
 //  AppBackFront
 //
-//  Created by Haroldo Vinente on 12/05/23.
+//  Created by Haroldo Vinente on 17/05/23.
 //
 
 import UIKit
 
-class NftImageTableViewCell: UITableViewCell {
-    static let identifier: String = .init(describing: NftImageTableViewCell.self)
+class NftDescriptionTableViewCell: UITableViewCell {
+    static let identifier: String = .init(describing: NftDescriptionTableViewCell.self)
     
-    private lazy var screen: NftImageTableViewCellScreen = {
-        let view = NftImageTableViewCellScreen()
+    private lazy var screen: NftDescriptionTableViewCellScreen = {
+        let view = NftDescriptionTableViewCellScreen()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -40,10 +40,9 @@ class NftImageTableViewCell: UITableViewCell {
         ])
     }
     
-    public func setupCell(urlImage: String, delegate: NftImageTableViewCellScreenDelegate) {
-        if let url = URL(string: urlImage){
-            screen.nftImageView.af.setImage(withURL: url)
-        }
-        screen.delegate(delegate: delegate)
+    public func setupCell(id: Int, title: String, description: String) {
+        screen.idLabel.text = "#\(id)"
+        screen.titleLabel.text = title
+        screen.descriptionLabel.text = description
     }
 }
