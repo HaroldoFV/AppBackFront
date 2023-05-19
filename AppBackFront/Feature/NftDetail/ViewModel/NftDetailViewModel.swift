@@ -47,7 +47,7 @@ class NftDetailViewModel: NSObject {
                 return nftDescription.height(withConstrainedWidth: width - 40, font: UIFont.systemFont(ofSize: 18)) + 89
 
             case .LastestDeal:
-                return 400
+                return 800
 
             default:
                 return 0

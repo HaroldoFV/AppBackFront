@@ -14,7 +14,6 @@ class LastestDealTableViewCell: UITableViewCell {
     private lazy var screen: LastestDealTableViewCellScreen = {
         let view = LastestDealTableViewCellScreen()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.configTableViewProtocols(delegate: self, dataSource: self)
         return view
     }()
     
@@ -46,6 +45,7 @@ class LastestDealTableViewCell: UITableViewCell {
     public func setupCell(data: Nft) {
         viewModel.setNft(nft: data)
         screen.titleLabel.text = viewModel.title
+        screen.configTableViewProtocols(delegate: self, dataSource: self)
     }
 }
 
@@ -55,7 +55,10 @@ extension LastestDealTableViewCell: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: ListOffersTableViewCell.identifier,
+                                                 for: indexPath) as? ListOffersTableViewCell
+        cell?.setupCell(data: viewModel.loadCurrentLatestDeal(indexPath: indexPath), isInicial: viewModel.isInicial(indexPath: indexPath), isFinal: viewModel.isFinal(indexPath: indexPath))
+        return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

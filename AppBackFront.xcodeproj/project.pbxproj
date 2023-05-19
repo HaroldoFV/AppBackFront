@@ -10,6 +10,8 @@
 		DF4F05E62A16AACB00478C63 /* LastestDealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F05E52A16AACB00478C63 /* LastestDealTableViewCell.swift */; };
 		DF4F05E92A16AB5600478C63 /* LastestDealTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F05E82A16AB5600478C63 /* LastestDealTableViewCellScreen.swift */; };
 		DF4F05EC2A16B31A00478C63 /* LastestDealTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F05EB2A16B31A00478C63 /* LastestDealTableViewCellViewModel.swift */; };
+		DF4F05EF2A16F95200478C63 /* ListOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F05EE2A16F95200478C63 /* ListOffersTableViewCell.swift */; };
+		DF4F05F22A16F9E500478C63 /* ListOffersTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4F05F12A16F9E500478C63 /* ListOffersTableViewCellScreen.swift */; };
 		DF628EE029E5F2F200534733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF628EDF29E5F2F200534733 /* AppDelegate.swift */; };
 		DF628EE229E5F2F200534733 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF628EE129E5F2F200534733 /* SceneDelegate.swift */; };
 		DF628EE429E5F2F200534733 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF628EE329E5F2F200534733 /* LoginVC.swift */; };
@@ -50,6 +52,8 @@
 		DF4F05E52A16AACB00478C63 /* LastestDealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCell.swift; sourceTree = "<group>"; };
 		DF4F05E82A16AB5600478C63 /* LastestDealTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCellScreen.swift; sourceTree = "<group>"; };
 		DF4F05EB2A16B31A00478C63 /* LastestDealTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastestDealTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		DF4F05EE2A16F95200478C63 /* ListOffersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOffersTableViewCell.swift; sourceTree = "<group>"; };
+		DF4F05F12A16F9E500478C63 /* ListOffersTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOffersTableViewCellScreen.swift; sourceTree = "<group>"; };
 		DF628EDC29E5F2F200534733 /* AppBackFront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBackFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF628EDF29E5F2F200534733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF628EE129E5F2F200534733 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,23 @@
 				DF4F05EB2A16B31A00478C63 /* LastestDealTableViewCellViewModel.swift */,
 			);
 			path = LastestDealTableViewCellViewModel;
+			sourceTree = "<group>";
+		};
+		DF4F05ED2A16F91000478C63 /* ListOffersTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F05F02A16F9CE00478C63 /* Screen */,
+				DF4F05EE2A16F95200478C63 /* ListOffersTableViewCell.swift */,
+			);
+			path = ListOffersTableViewCell;
+			sourceTree = "<group>";
+		};
+		DF4F05F02A16F9CE00478C63 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F05F12A16F9E500478C63 /* ListOffersTableViewCellScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		DF628ED329E5F2F200534733 = {
@@ -370,6 +391,7 @@
 		DFE8D3362A0B074D001E39A0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				DF4F05ED2A16F91000478C63 /* ListOffersTableViewCell */,
 				DF4F05E42A16AA0000478C63 /* LastestDealTableViewCell */,
 				DFCC2C662A15903700C4F480 /* NftDescriptionTableViewCell */,
 				DFC8D9602A0ED6EB00A5F537 /* NftImageTableViewCell */,
@@ -530,6 +552,7 @@
 				DF628EE429E5F2F200534733 /* LoginVC.swift in Sources */,
 				DFC8D9652A0ED84B00A5F537 /* NftImageTableViewCellScreen.swift in Sources */,
 				DFE189142A071CB50040F70E /* HomeViewModel.swift in Sources */,
+				DF4F05F22A16F9E500478C63 /* ListOffersTableViewCellScreen.swift in Sources */,
 				DFB0BDC429E9CDDE00B38101 /* LoginScreen.swift in Sources */,
 				DF628EE029E5F2F200534733 /* AppDelegate.swift in Sources */,
 				DFD9756C2A028E0F0074DCA7 /* HomeVC.swift in Sources */,
@@ -550,6 +573,7 @@
 				DFD617252A0DC0B1007DF17E /* NftDetailVC.swift in Sources */,
 				DFD975672A028D0A0074DCA7 /* TabBarVC.swift in Sources */,
 				DF628EE229E5F2F200534733 /* SceneDelegate.swift in Sources */,
+				DF4F05EF2A16F95200478C63 /* ListOffersTableViewCell.swift in Sources */,
 				DFD617222A0C1E88007DF17E /* NftTableViewCellScreen.swift in Sources */,
 				DFD6171F2A0C1D54007DF17E /* NftTableViewCell.swift in Sources */,
 				DF4F05E62A16AACB00478C63 /* LastestDealTableViewCell.swift in Sources */,
