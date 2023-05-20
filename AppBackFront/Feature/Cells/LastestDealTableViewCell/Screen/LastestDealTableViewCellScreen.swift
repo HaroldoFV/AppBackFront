@@ -22,6 +22,7 @@ class LastestDealTableViewCellScreen: UIView {
         tableView.register(ListOffersTableViewCell.self, forCellReuseIdentifier: ListOffersTableViewCell.identifier)
         tableView.separatorStyle = .none
         tableView.isScrollEnabled = false
+        tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1)
         return tableView
     }()
 
@@ -54,8 +55,9 @@ class LastestDealTableViewCellScreen: UIView {
             titleLabel.heightAnchor.constraint(equalToConstant: 30),
 
             tableView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 15),
-            tableView.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
+            tableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            tableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20),
         ])
     }
 }
