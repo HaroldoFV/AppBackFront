@@ -5,8 +5,8 @@
 //  Created by Haroldo Vinente on 21/05/23.
 //
 
-import Alamofire
 import UIKit
+import Alamofire
 
 protocol WalletServiceDelegate: GenericService {
     func getWalletFromJson(completion: @escaping completion<WalletData?>)
@@ -14,10 +14,11 @@ protocol WalletServiceDelegate: GenericService {
 }
 
 class WalletService: WalletServiceDelegate {
+    
     func getWallet(completion: @escaping completion<WalletData?>) {
-        let url = "https://run.mocky.io/v3/9865d3fa-ea37-466d-8a6a-84b464962e36"
-
-        AF.request(url, method: .get).validate(statusCode: 200 ... 299).responseDecodable(of: WalletData.self) { response in
+        let url: String = "https://run.mocky.io/v3/d1823d68-3355-4d53-8800-2a847b0af2e1"
+        
+        AF.request(url, method: .get).validate(statusCode: 200...299).responseDecodable(of: WalletData.self) { response in
             debugPrint(response)
             switch response.result {
                 case .success(let success):
@@ -29,13 +30,14 @@ class WalletService: WalletServiceDelegate {
             }
         }
     }
-
+    
+    
     func getWalletFromJson(completion: @escaping completion<WalletData?>) {
         if let url = Bundle.main.url(forResource: "WalletData", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
                 let result: WalletData = try JSONDecoder().decode(WalletData.self, from: data)
-                completion(result, nil)
+                completion(result,nil)
             } catch {
                 completion(nil, Error.fileDecodingFailed(name: "WalletData", error))
             }
@@ -43,4 +45,6 @@ class WalletService: WalletServiceDelegate {
             completion(nil, Error.fileNotFound(name: "WalletData"))
         }
     }
+    
+    
 }

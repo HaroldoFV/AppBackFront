@@ -8,11 +8,10 @@
 import Foundation
 
 // MARK: - WalletData
-
 struct WalletData: Codable {
     var quotationEthereum: QuotationEthereum?
     var latestTransactionsCell: LatestTransactionsCell?
-
+    
     enum CodingKeys: String, CodingKey {
         case quotationEthereum = "quotation_ethereum"
         case latestTransactionsCell = "latest_transactions_cell"
@@ -20,11 +19,10 @@ struct WalletData: Codable {
 }
 
 // MARK: - LatestTransactionsCell
-
 struct LatestTransactionsCell: Codable {
     var latestTransactionsTitle: String?
     var listOfTransactions: [ListOfTransaction]?
-
+    
     enum CodingKeys: String, CodingKey {
         case latestTransactionsTitle = "latest_transactions_title"
         case listOfTransactions = "list_of_transactions"
@@ -32,12 +30,11 @@ struct LatestTransactionsCell: Codable {
 }
 
 // MARK: - ListOfTransaction
-
 struct ListOfTransaction: Codable {
     var type, idTransaction, image: String?
     var priceEth, valueDollar: Double?
     var dateAndHour: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case type
         case idTransaction = "id_transaction"
@@ -49,11 +46,10 @@ struct ListOfTransaction: Codable {
 }
 
 // MARK: - QuotationEthereum
-
 struct QuotationEthereum: Codable {
     var ethValue, valueInDollars: Double?
     var coinEthImage: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case ethValue = "eth_value"
         case valueInDollars = "value_in_dollars"
