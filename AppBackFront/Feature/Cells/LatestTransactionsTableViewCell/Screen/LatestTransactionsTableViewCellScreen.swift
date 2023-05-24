@@ -1,13 +1,13 @@
 //
-//  LastestDealTableViewCellScreen.swift
+//  LatestTransactionsTableViewCellScreen.swift
 //  AppBackFront
 //
-//  Created by Haroldo Vinente on 18/05/23.
+//  Created by Haroldo Vinente on 23/05/23.
 //
 
 import UIKit
 
-class LastestDealTableViewCellScreen: UIView {
+class LatestTransactionsTableViewCellScreen: UIView {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -19,10 +19,10 @@ class LastestDealTableViewCellScreen: UIView {
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(ListOffersTableViewCell.self, forCellReuseIdentifier: ListOffersTableViewCell.identifier)
+        tableView.register(ListOfTransactionTableViewCell.self, forCellReuseIdentifier: ListOfTransactionTableViewCell.identifier)
         tableView.separatorStyle = .none
         tableView.isScrollEnabled = false
-        tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1)
+        tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         return tableView
     }()
     
@@ -33,7 +33,7 @@ class LastestDealTableViewCellScreen: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1)
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         addViews()
         configConstraints()
     }

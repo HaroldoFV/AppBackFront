@@ -1,18 +1,18 @@
 //
-//  LastestDealTableViewCell.swift
+//  LatestTransactionsTableViewCellTableViewCell.swift
 //  AppBackFront
 //
-//  Created by Haroldo Vinente on 18/05/23.
+//  Created by Haroldo Vinente on 23/05/23.
 //
 
 import UIKit
 
-class LastestDealTableViewCell: UITableViewCell {
-    static let identifier: String = .init(describing: LastestDealTableViewCell.self)
-    var viewModel: LastestDealTableViewCellViewModel = .init()
+class LatestTransactionsTableViewCell: UITableViewCell {
+    static let identifier: String = .init(describing: LatestTransactionsTableViewCell.self)
+    var viewModel: LatestTransactionsTableViewCellViewModel = .init()
     
-    private lazy var screen: LastestDealTableViewCellScreen = {
-        let view = LastestDealTableViewCellScreen()
+    private lazy var screen: LatestTransactionsTableViewCellScreen = {
+        let view = LatestTransactionsTableViewCellScreen()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -43,21 +43,20 @@ class LastestDealTableViewCell: UITableViewCell {
         ])
     }
     
-    public func setupCell(data: Nft) {
-        viewModel.setNft(nft: data)
+    public func setupCell(data: LatestTransactionsCell) {
+        viewModel.setLatestTransactions(data: data)
         screen.titleLabel.text = viewModel.title
-//        screen.configTableViewProtocols(delegate: self, dataSource: self)
     }
 }
 
-extension LastestDealTableViewCell: UITableViewDelegate, UITableViewDataSource {
+extension LatestTransactionsTableViewCell: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfRowsInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ListOffersTableViewCell.identifier,
-                                                 for: indexPath) as? ListOffersTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ListOfTransactionTableViewCell.identifier,
+                                                 for: indexPath) as? ListOfTransactionTableViewCell
         cell?.setupCell(data: viewModel.loadCurrentLatestDeal(indexPath: indexPath), isInicial: viewModel.isInicial(indexPath: indexPath), isFinal: viewModel.isFinal(indexPath: indexPath))
         return cell ?? UITableViewCell()
     }
